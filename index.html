@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Jacobi method</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/numeric-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div>
+			<input type="button" value="Restart" id="start" style="margin: 10px;">
+		</div>
+		<div style="width: 400px;">
+			<p>Animation speed (Reflesh cycle): <span id="speedSpan"></span>[ms]</p>
+			<div id="speedSlider" style="width: 300px;"></div>
+		</div>
+		<div>
+			<p>Iteration count: <span id="itrSpan"></span></p>
+		</div>
+		<div>
+			<p>A(input) = P * A * P.transpose()</p>
+		</div>
+		<div>
+			<canvas id="Canvas-A" width="1000" height="600" style="border: solid 1px;"></canvas>
+			<canvas id="Canvas-P" width="1000" height="600" style="border: solid 1px;"></canvas>
+			<canvas id="Canvas-D" width="1000" height="600" style="border: solid 1px;"></canvas>
+			<canvas id="Canvas-PT" width="1000" height="600" style="border: solid 1px;"></canvas>
+		</div>
+		<div>
+			<h4>ソースコード</h4>
+			<ul>
+				<li><a href="https://github.com/sasekazu/visualize-jacobi-diagonalization">GitHub</a></li>
+				<li><a href="https://gist.github.com/sasekazu/a406c51adca34a37f2cc">Gist</a>　jacobi法のみ抜粋</li>
+			</ul>
+			<h4>参考資料</h4>
+			<ul>
+				<li>平岡，堀，プログラミングのための線形代数，オーム社，2004.</li>
+				<li>井尻，゛Shape Matching Dynamics -- 形状制約に基づく弾性体表現法”，Computer Graphics Gems JP 2012, ボーンデジタル，2012.</li>
+			</ul>
+		</div>
+	</div>
+	<footer style="text-align: center;">
+		<a href="http://www.sasekazu.info">sasekazu.info</a>
+	</footer>
+</body>
+</html>
